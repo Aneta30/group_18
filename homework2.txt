@@ -1,0 +1,20 @@
+cd foldername
+mkdir -p Papka1 Papka2 Papka3
+cd Papka1
+touch File1.txt File2.txt File3.txt File4.json File5.json
+mkdir -p Lu1 Lu2 Lu3
+ ls -la
+total 4
+drwxr-xr-x 1 Aneta 197121 0 Apr 27 22:41 ./
+drwxr-xr-x 1 Aneta 197121 0 Apr 27 22:32 ../
+-rw-r--r-- 1 Aneta 197121 0 Apr 27 22:39 File1.txt
+-rw-r--r-- 1 Aneta 197121 0 Apr 27 22:39 File2.txt
+-rw-r--r-- 1 Aneta 197121 0 Apr 27 22:39 File3.txt
+-rw-r--r-- 1 Aneta 197121 0 Apr 27 22:39 File4.json
+-rw-r--r-- 1 Aneta 197121 0 Apr 27 22:39 File5.json
+drwxr-xr-x 1 Aneta 197121 0 Apr 27 22:41 Lu1/
+drwxr-xr-x 1 Aneta 197121 0 Apr 27 22:41 Lu2/
+drwxr-xr-x 1 Aneta 197121 0 Apr 27 22:41 Lu3/
+mv Papka1/Lu1 Papka2
+mv Papka1/Lu2 Papka2
+
