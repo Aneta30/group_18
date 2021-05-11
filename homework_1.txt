@@ -49,3 +49,26 @@ find: ‘Aneta.txt’: No such file or directory
 18) вывести несколько последних строк из текстового файла - tail -n Aneta.txt (n- количество строк)
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less Aneta.txt
 20) вывести дату и время -date
+
+1) Отправить http запрос на сервер 
+https://api.quarantine.country/api/v1/regions -   сurl -X GET -d arg=val -d arg2=val2 https://api.quarantine.country/api/v1/regions
+
+2)Написать скрипт который выполнит автоматически пункты 3,4,5,6,7,8,13
+   1.Создать пустой файл формата .sh -   touch myscript.sh
+   2.Проверить что файл создался -  ls -l
+   3.Открыть файл -  vim myscript.sh
+   4.Включить режим редактирования -  i
+   5.Пишем скрипт:
+            #!/bin/bash      # указывает системе на то, что сценарий создан именно для bash
+            cd natalia       # открыли папку
+            cd Vetal
+            sudo mkdir Папка_1 Папка_2 Папка_3  #создали 3 папки
+            cd Папка_1        #вошли в папку
+            sudo touch Test.txt Test_1.txt Test_2.txt Тест.json Тест_1.json   #создали 5 файлов
+            sudo mkdir File File1 File2    #создали 3 папки
+            ls -l   #вывели список содержимого папки
+            sudo mv Test_1.txt Test.json File/    #переместили 2 файла в папку
+   6.Выключаем режим редактирования -   Esc
+   7.Сохраняем файл -   :wq
+   8.Сделаем файл исполняемым -   chmod +x ./myscript
+   9.Выполняем наш скрипт -   ./myscript
